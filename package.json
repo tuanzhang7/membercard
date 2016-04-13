@@ -9,6 +9,9 @@
   "author": "tuanzhang",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^13.3.0"
+    "good": "^6.6.0",
+    "good-console": "^5.3.1",
+    "hapi": "^13.3.0",
+    "lodash": "^4.10.0"
   }
 }
