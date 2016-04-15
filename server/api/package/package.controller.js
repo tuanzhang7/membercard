@@ -3,12 +3,25 @@
  */
 'use strict';
 
+
+var service = require('./package.service.js');
+
+exports.index = function (request, reply) {
+    var objs = service.getAll();
+
+    return reply(objs);
+};
+
 exports.show = function (request, reply) {
     var id=request.params.id;
-    return reply({
-        "id":id,
-        "validPeriod":365,
-        "vistis":16,
-        "price":188
-    });
+    var obj = service.getById(id);
+
+    return reply(obj);
+};
+
+exports.create = function (request, reply) {
+    var id=request.body;
+    var obj = service.getById(id);
+
+    return reply(obj);
 };

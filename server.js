@@ -17,16 +17,19 @@ server.connection({
 
 // Add the route
 server.route({
-    method:  ['GET', 'POST'],
+    method:  ['GET'],
     path:'/api/package',
-    handler: function (request, reply) {
-        return reply('hello world');
-    }
+    handler: packageController.index
 });
 server.route({
     method:  ['GET'],
     path:'/api/package/{id}',
     handler: packageController.show
+});
+server.route({
+    method:  ['POST'],
+    path:'/api/package',
+    handler: packageController.create
 });
 
 // Start the server
