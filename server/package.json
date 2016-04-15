@@ -1,0 +1,20 @@
+[
+  {
+    "id":1,
+    "validPeriod":365,
+    "vistis":16,
+    "price":188
+  },
+  {
+    "id":2,
+    "validPeriod":365,
+    "vistis":-1,
+    "price":188
+  },
+  {
+    "id":1,
+    "validPeriod":180,
+    "vistis":8,
+    "price":100
+  }
+]

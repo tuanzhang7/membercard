@@ -7,6 +7,7 @@
 const Hapi = require('hapi');
 const Good = require('good');
 
+var packageController = require('./server/api/package/package.controller');
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
@@ -16,12 +17,16 @@ server.connection({
 
 // Add the route
 server.route({
-    method: 'GET',
-    path:'/hello',
+    method:  ['GET', 'POST'],
+    path:'/api/package',
     handler: function (request, reply) {
-
         return reply('hello world');
     }
+});
+server.route({
+    method:  ['GET'],
+    path:'/api/package/{id}',
+    handler: packageController.show
 });
 
 // Start the server

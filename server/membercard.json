@@ -1,0 +1,81 @@
+[
+  {
+    "id":1,
+    "phone":82981261,
+    "issueDate":"2016-01-01",
+    "expiredDate":"2017-01-01",
+    "price":188,
+    "name":"xujing",
+    "email":"shenxj08@gmail.com",
+    "visits":16,
+    "visitsAvailable":13,
+    "usage":[
+      {
+        "timeIn":"2016-02-01 10:47",
+        "timeOut":"2016-02-01 11:47",
+        "branch":"changi air port",
+        "serviceNo":3
+      },
+      {
+        "timeIn":"2016-02-01 10:47",
+        "timeOut":"2016-02-01 11:47",
+        "branch":"changi air port",
+        "serviceNo":6
+      },
+      {
+        "timeIn":"2016-04-01 14:47",
+        "timeOut":"2016-04-01 15:47",
+        "branch":"vivo city",
+        "serviceNo":12
+      },
+      {
+        "timeIn":"2016-04-015 14:47",
+        "timeOut":"",
+        "branch":"vivo city",
+        "serviceNo":1
+
+      }
+    ]
+  },
+  {
+    "id":2,
+    "phone":90400583,
+    "issueDate":"2016-01-01",
+    "expiredDate":"2017-01-01",
+    "vistis":-1,
+    "price":488,
+    "name":"",
+    "visitsAvailable":-1,
+    "email":"tuanzhang@gmail.com",
+    "usage":[
+      {
+        "timeIn":"2016-02-01 10:47",
+        "timeOut":"2016-02-01 11:47",
+        "branch":"changi air port",
+        "serviceNo":3
+      },
+      {
+        "timeIn":"2016-04-01 14:47",
+        "timeOut":"2016-04-01 15:47",
+        "branch":"vivo city",
+        "serviceNo":3
+      },
+      {
+        "timeIn":"2016-04-015 14:47",
+        "timeOut":"",
+        "branch":"vivo city"
+      }
+    ]
+  },
+  {
+    "id":3,
+    "phone":90987898,
+    "issueDate":"2016-08-01",
+    "expiredDate":"2017-08-01",
+    "vistis":8,
+    "price":100,
+    "name":"tom",
+    "email":"tom@gmail.com",
+    "visitsAvailable":8
+  }
+]
