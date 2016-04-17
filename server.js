@@ -8,6 +8,8 @@ const Hapi = require('hapi');
 const Good = require('good');
 
 var packageController = require('./server/api/package/package.controller');
+var membercardController = require('./server/api/membercard/membercard.controller');
+var visitController = require('./server/api/visit/visit.controller');
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
@@ -30,6 +32,37 @@ server.route({
     method:  ['POST'],
     path:'/api/package',
     handler: packageController.create
+});
+
+server.route({
+    method:  ['GET'],
+    path:'/api/membercard',
+    handler: membercardController.index
+});
+server.route({
+    method:  ['GET'],
+    path:'/api/membercard/{id}',
+    handler: membercardController.show
+});
+server.route({
+    method:  ['POST'],
+    path:'/api/membercard',
+    handler: membercardController.create
+});
+server.route({
+    method:  ['GET'],
+    path:'/api/visit/{fromDate}/{toDate}',
+    handler: visitController.index
+});
+server.route({
+    method:  ['GET'],
+    path:'/api/visit/getCurrentVisits/{branch}',
+    handler: visitController.getCurrentVisits
+});
+server.route({
+    method:  ['POST'],
+    path:'/api/visit/checkin',
+    handler: visitController.checkIn
 });
 
 // Start the server

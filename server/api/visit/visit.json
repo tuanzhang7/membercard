@@ -1,0 +1,44 @@
+[
+  {
+    "checkInTime": "2016-04-15 14:34",
+    "checkOutTime": "2016-04-15 16:34",
+    "actualcheckOutTime":"2016-04-15 15:00",
+    "branch": "vivo city",
+    "serviceNo": 1
+  },
+  {
+    "checkInTime": "2016-04-15 14:34",
+    "checkOutTime": "2016-04-15 16:34",
+    "actualcheckOutTime":"2016-04-15 16:00",
+    "branch": "vivo city",
+    "serviceNo": 2
+  },
+  {
+    "checkInTime": "2016-04-15 14:34",
+    "checkOutTime": "2016-04-15 16:34",
+    "actualcheckOutTime":"",
+    "branch": "vivo city",
+    "serviceNo": 3
+  },
+  {
+    "checkInTime": "2016-04-15 14:34",
+    "checkOutTime": "2016-04-15 16:34",
+    "actualcheckOutTime":"",
+    "branch": "vivo city",
+    "serviceNo": 4
+  },
+  {
+    "checkInTime": "2016-04-15 14:47",
+    "checkOutTime": "2016-04-15 16:47",
+    "actualcheckOutTime":"",
+    "branch": "changi air port",
+    "serviceNo": 1
+  },
+  {
+    "checkInTime": "2016-04-15 14:47",
+    "checkOutTime": "2016-04-15 16:47",
+    "actualcheckOutTime":"",
+    "branch": "changi air port",
+    "serviceNo": 3
+  }
+]

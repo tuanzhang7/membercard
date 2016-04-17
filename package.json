@@ -4,11 +4,13 @@
   "description": "member card system",
   "main": "index.js",
   "scripts": {
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tuanzhang",
   "license": "ISC",
   "dependencies": {
+    "chance": "^1.0.2",
     "good": "^6.6.0",
     "good-console": "^5.3.1",
     "hapi": "^13.3.0",

@@ -9,17 +9,17 @@
     "email":"shenxj08@gmail.com",
     "visits":16,
     "visitsAvailable":13,
-    "usage":[
+    "visits":[
       {
         "timeIn":"2016-02-01 10:47",
         "timeOut":"2016-02-01 11:47",
-        "branch":"changi air port",
+        "branch":"changi airport",
         "serviceNo":3
       },
       {
         "timeIn":"2016-02-01 10:47",
         "timeOut":"2016-02-01 11:47",
-        "branch":"changi air port",
+        "branch":"changi airport",
         "serviceNo":6
       },
       {
@@ -29,11 +29,10 @@
         "serviceNo":12
       },
       {
-        "timeIn":"2016-04-015 14:47",
+        "timeIn":"2016-04-15 14:47",
         "timeOut":"",
         "branch":"vivo city",
         "serviceNo":1
-
       }
     ]
   },
@@ -47,11 +46,11 @@
     "name":"",
     "visitsAvailable":-1,
     "email":"tuanzhang@gmail.com",
-    "usage":[
+    "visits":[
       {
         "timeIn":"2016-02-01 10:47",
         "timeOut":"2016-02-01 11:47",
-        "branch":"changi air port",
+        "branch":"changi airport",
         "serviceNo":3
       },
       {
@@ -61,7 +60,7 @@
         "serviceNo":3
       },
       {
-        "timeIn":"2016-04-015 14:47",
+        "timeIn":"2016-04-15 14:47",
         "timeOut":"",
         "branch":"vivo city"
       }
