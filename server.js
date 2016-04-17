@@ -64,6 +64,11 @@ server.route({
     path:'/api/visit/checkin',
     handler: visitController.checkIn
 });
+server.route({
+    method:  ['PUT'],
+    path:'/api/visit/checkout/{id}',
+    handler: visitController.checkOut
+});
 
 // Start the server
 server.register({

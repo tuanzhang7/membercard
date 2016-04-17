@@ -41,3 +41,22 @@ exports.checkIn = function (request, reply) {
 
     return reply(obj);
 };
+
+exports.checkOut = function (request, reply) {
+    var id=request.params.id;
+    var obj = service.getById(id);
+
+    var actualcheckOutTime=Date.now();
+
+    if(request.payload && request.payload.actualcheckOutTime){
+        actualcheckOutTime=request.payload.actualcheckOutTime;
+
+    }
+    obj.actualcheckOutTime=actualcheckOutTime;
+    
+    console.log("checkout:"+id+" "+actualcheckOutTime);
+    
+    var obj = service.getById(id);
+
+    return reply(obj);
+};
