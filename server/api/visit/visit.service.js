@@ -2,7 +2,7 @@
  * Created by xujing on 15/04/16.
  */
 'use strict';
-
+var visit = require('./visit.model');
 var fs = require('fs');
 
 exports.getAll=function () {

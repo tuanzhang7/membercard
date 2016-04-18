@@ -4,7 +4,7 @@
   "description": "member card system",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tuanzhang",
@@ -15,6 +15,7 @@
     "good-console": "^5.3.1",
     "hapi": "^13.3.0",
     "lodash": "^4.10.0",
+    "mongoose": "^4.4.12",
     "sequelize": "^3.21.0"
   }
 }
