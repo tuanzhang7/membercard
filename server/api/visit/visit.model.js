@@ -7,7 +7,7 @@ var VisitSchema = new mongoose.Schema({
         checkOutTime:{ type: Date, default: Date.now,required: true},
         actualcheckOutTime:{ type: Date},
         branch:String,
-        serviceNo:String
+        serviceNo:{type:String,required:true}
     }
     ,
     {
