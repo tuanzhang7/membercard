@@ -15,6 +15,7 @@
     "good-console": "^5.3.1",
     "hapi": "^13.3.0",
     "lodash": "^4.10.0",
+    "moment": "^2.13.0",
     "mongoose": "^4.4.12",
     "sequelize": "^3.21.0"
   }

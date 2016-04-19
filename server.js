@@ -6,11 +6,28 @@
 
 const Hapi = require('hapi');
 const Good = require('good');
+var mongoose =require('mongoose') ;
+
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+var config = require('./server/config/environment');
 
 var packageController = require('./server/api/package/package.controller');
 var membercardController = require('./server/api/membercard/membercard.controller');
 var visitController = require('./server/api/visit/visit.controller');
 // Create a server with a host and port
+var seed= require('./server/config/seed');
+// Connect to MongoDB
+mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connection.on('error', function(err) {
+    console.error('MongoDB connection error: ' + err);
+    process.exit(-1);
+});
+
+// Populate databases with sample data
+if (config.seedDB) { require('./server/config/seed'); }
+
+
 const server = new Hapi.Server();
 server.connection({
     host: 'localhost',
